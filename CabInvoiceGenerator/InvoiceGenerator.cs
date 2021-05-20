@@ -18,5 +18,16 @@ namespace CabInvoiceGenerator
             this.totalFare = (distance * CostPerKilometer) + (time * CostPerMinute); //calculated fare
             return Math.Max(this.totalFare, MinimumFare); //return value
         }
+        // UC2:- Multiple Rides.
+                                 
+        public double MultipleRides(Rides[] rides) // Method to Calculate Aggregate Fare Of Multiple Rides
+        {
+            double totalRidesFare = 0.0; //store fare
+            foreach (Rides ride in rides) //itterate loop
+            {
+                totalRidesFare += this.CalculateFare(ride.RideDistance, ride.RideTime); //calculate fare
+            }
+            return totalRidesFare / rides.Length;
+        }
     }
 }
