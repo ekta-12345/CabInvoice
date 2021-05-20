@@ -15,7 +15,7 @@ namespace MSTestCabInvoice
         // UC1.1:-  Test Method for calculating fare when fare is greater than minimum fare.
 
         [Test]
-        public void GivenDistanceAndTime_FareGreaterThanMinimumFareShouldReturnFare() //creating method to calculate greater than minimum fare
+        public void GivenDistanceaAndTime_ShouldReturnTotalFare() //creating method to calculate greater than minimum fare
         {
             try
             {
@@ -34,7 +34,7 @@ namespace MSTestCabInvoice
         //UC1.2:- Test Method for calculating fare when fare is less than minimum fare.
 
         [Test]
-        public void GivenDistanceAndTime_WhenTotalFareIsLessThanMinimumFare_ShouldReturnMinimumFare() //create method to print minimum fare
+        public void GivenDistanceaAndTime_ShouldReturnMinumumFare() //create method to print minimum fare
         {
             try
             {
@@ -49,5 +49,28 @@ namespace MSTestCabInvoice
                 Console.WriteLine(ex.Message);
             }
         }
+        //UC2:- Invoice generator should take in multiple rides and calculate aggregate total for all.
+ 
+         [Test]
+
+        public void GivenMultipleRides_ShouldReturnTotalFare() // Method to Calculate Aggregate Fare Of Multiple Rides
+        {
+            try
+            {
+                Rides[] ride = { new Rides(4.0, 5.0), new Rides(3.0, 5.0) }; // store multiple ride rideDistance, Ridetime
+                double aggregateFare = this.cabInvoiceGenerator.MultipleRides(ride); //call GetMultipleRideFare method and calculat fare
+                Assert.AreEqual(40.0, aggregateFare);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
     }
+
+
+
+
+
+        
 }
