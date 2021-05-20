@@ -1,0 +1,16 @@
+D:\C#\CabInvoice\CabInvoiceGenerator\bin\Debug\net5.0\CabInvoiceGenerator.exe
+D:\C#\CabInvoice\CabInvoiceGenerator\bin\Debug\net5.0\CabInvoiceGenerator.deps.json
+D:\C#\CabInvoice\CabInvoiceGenerator\bin\Debug\net5.0\CabInvoiceGenerator.runtimeconfig.json
+D:\C#\CabInvoice\CabInvoiceGenerator\bin\Debug\net5.0\CabInvoiceGenerator.runtimeconfig.dev.json
+D:\C#\CabInvoice\CabInvoiceGenerator\bin\Debug\net5.0\CabInvoiceGenerator.dll
+D:\C#\CabInvoice\CabInvoiceGenerator\bin\Debug\net5.0\ref\CabInvoiceGenerator.dll
+D:\C#\CabInvoice\CabInvoiceGenerator\bin\Debug\net5.0\CabInvoiceGenerator.pdb
+D:\C#\CabInvoice\CabInvoiceGenerator\obj\Debug\net5.0\CabInvoiceGenerator.csprojAssemblyReference.cache
+D:\C#\CabInvoice\CabInvoiceGenerator\obj\Debug\net5.0\CabInvoiceGenerator.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\CabInvoice\CabInvoiceGenerator\obj\Debug\net5.0\CabInvoiceGenerator.AssemblyInfoInputs.cache
+D:\C#\CabInvoice\CabInvoiceGenerator\obj\Debug\net5.0\CabInvoiceGenerator.AssemblyInfo.cs
+D:\C#\CabInvoice\CabInvoiceGenerator\obj\Debug\net5.0\CabInvoiceGenerator.csproj.CoreCompileInputs.cache
+D:\C#\CabInvoice\CabInvoiceGenerator\obj\Debug\net5.0\CabInvoiceGenerator.dll
+D:\C#\CabInvoice\CabInvoiceGenerator\obj\Debug\net5.0\ref\CabInvoiceGenerator.dll
+D:\C#\CabInvoice\CabInvoiceGenerator\obj\Debug\net5.0\CabInvoiceGenerator.pdb
+D:\C#\CabInvoice\CabInvoiceGenerator\obj\Debug\net5.0\CabInvoiceGenerator.genruntimeconfig.cache
