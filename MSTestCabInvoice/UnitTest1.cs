@@ -83,12 +83,26 @@ namespace MSTestCabInvoice
                 Console.WriteLine(ex.Message);
             }
         }
-
+        /* UC4:- Invoice Service.
+                - Given a User Id, the invoice Service gets the list of rides from the RideRepository, and return the Invoice.
+        */
+        [Test]
+        public void GivenUserIdGetInvoiceSummary() // Test Method To Get Invoice Summary By User Id.
+        {
+            try
+            {
+                string userId = "ektakumbhare3@gmail.com"; //userid
+                Rides[] rides = { new Rides(3, 5), new Rides(4, 5) }; //multiple rides
+                this.cabInvoiceGenerator.MapRidesToUser(userId, rides); //call method
+                InvoiceDetails invoiceSummary = this.cabInvoiceGenerator.GetInvoiceSummary(userId); //call method
+                InvoiceDetails invoiceSummaryOne = new InvoiceDetails(2, 80);
+                Assert.AreEqual(invoiceSummary, invoiceSummaryOne); //check value equal or not
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
     }
-
-
-
-
-
-
 }
+
