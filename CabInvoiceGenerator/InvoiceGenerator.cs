@@ -29,5 +29,17 @@ namespace CabInvoiceGenerator
             }
             return totalRidesFare / rides.Length;
         }
+        //UC3:- Test Method To Get Enhanced Invoice Summary With More Ride Details.
+        
+        public InvoiceDetails CalculateFare(Rides[] rides)  //  Method to Calculate Aggregate Fare Of Multiple Rides
+        {
+            double totalRidesFare = 0.0; //store fare
+            foreach (Rides ride in rides) //itterate loop
+            {
+                totalRidesFare += this.CalculateFare(ride.RideDistance, ride.RideTime); //calculate fare
+            }
+
+            return new InvoiceDetails(rides.Length, totalRidesFare);//return value
+        }
     }
 }

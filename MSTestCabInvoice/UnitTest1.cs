@@ -66,11 +66,29 @@ namespace MSTestCabInvoice
                 Console.WriteLine(ex.Message);
             }
         }
+         //UC3:- Test Method To Get Enhanced Invoice Summary With More Ride Details.
+      
+        [Test]
+        public void WhenGivenMultipleRidesGetInvoiceDetails()
+        {
+            try
+            {
+                InvoiceDetails invoiceSummary = new InvoiceDetails(2, 605);
+                Rides[] rides = { new Rides(30, 30), new Rides(25, 25) };
+                InvoiceDetails invoiceSummaryOne = this.cabInvoiceGenerator.CalculateFare(rides);
+                Assert.AreEqual(invoiceSummary, invoiceSummaryOne); // check value
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
     }
 
 
 
 
 
-        
+
 }
